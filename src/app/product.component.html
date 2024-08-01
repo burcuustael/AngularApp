@@ -1,0 +1,35 @@
+<!-- <div
+  *ngIf="model.getProducts().length > 0"
+  class="bg-primary text-white m-2 p-2"
+>
+  There are {{ model.getProducts().length }} products in the repo
+</div>
+
+<div
+  *ngIf="model.getProducts().length == 0"
+  class="bg-primary text-white m-2 p-2"
+>
+  There are no products in the repo
+</div> -->
+
+<!-- <div class="bg-info m-2 p-2" [ngSwitch]="model.getProductCount()">
+  <span *ngSwitchCase="0">There are no products</span>
+  <span *ngSwitchCase="1">There are 1 product</span>
+  <span *ngSwitchCase="2">There are 2 product</span>
+  <span *ngSwitchDefault>There are many products</span>
+</div> -->
+
+<!-- <ng-template [ngTemplateOutlet]="productList"></ng-template>
+<ng-template [ngTemplateOutlet]="productList"></ng-template>
+
+<ng-template #productList>
+  <div class="m-5">
+    <ul>
+      <li *ngFor="let product of model.getProducts(); index as i">
+        {{ i }} - {{ product.name }}
+      </li>
+    </ul>
+  </div>
+</ng-template> -->
+
+<admin-products></admin-products>
