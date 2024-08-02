@@ -10,5 +10,13 @@ import { Product } from './product.model';
 export class ProductComponent {
   model: ProductRepository = new ProductRepository();
 
-  product: Product | undefined = this.model.getProductsById(1);
+  newProduct: Product = new Product();
+
+  get jsonProduct() {
+    return JSON.stringify(this.newProduct);
+  }
+
+  addProduct(p: Product) {
+    console.log('New Prodcut: ' + this.jsonProduct);
+  }
 }
