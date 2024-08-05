@@ -19,4 +19,6 @@ export class ProductComponent {
   addProduct(p: Product) {
     console.log('New Prodcut: ' + this.jsonProduct);
   }
+
+ 
 }
