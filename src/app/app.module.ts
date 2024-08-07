@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { ProductComponent } from './product.component';
 import { InputEmailDirective } from './input-email.directive';
 import { AdminProductsComponent } from './admin-products/admin-products.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { FormsModule } from '@angular/forms';
     InputEmailDirective,
     AdminProductsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })
